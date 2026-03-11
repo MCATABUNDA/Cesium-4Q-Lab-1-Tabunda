@@ -1,7 +1,7 @@
 function validateForm(){
-    let studentName = document.forms["order-form"]["student"].value;
+    let student = document.forms["order-form"]["student"].value;
 
-    document.forms["order-form"]["student"].value = studentName.trim();
+    document.forms["order-form"]["student"].value = student.trim();
 
     if(student.trim() === "")
     {
