@@ -7,7 +7,7 @@ function processData(){
     let appleNum = PARAMS.get("appleNum");
     let moneyAmount = PARAMS.get("money");
 
-    let totalCost = (18 * appleNum) + (20 * orangeQNum);
+    let totalCost = (18 * appleNum) + (20 * orangeNum);
     let changeAmount = moneyAmount - totalCost;
 
     document.getElementById("greetings").innerText = `Hello, ${student}!`;
@@ -21,4 +21,5 @@ function processData(){
         document.getElementById("totalprice").innerText = `${moneyAmount} is your total money.`;
         document.getElementById("change").innerText = `Your change is PHP ${changeAmount}.`;
     }
+
 }
