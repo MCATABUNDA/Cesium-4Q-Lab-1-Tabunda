@@ -2,7 +2,7 @@ const QUERY = window.location.search;
 const PARAMS = new URLSearchParams(QUERY);
 
 function processData(){
-    let studentName = PARAMS.get("student");
+    let student = PARAMS.get("student");
     let orangeNum = PARAMS.get("orangeNum");
     let appleNum = PARAMS.get("appleNum");
     let moneyAmount = PARAMS.get("money");
@@ -21,5 +21,4 @@ function processData(){
         document.getElementById("totalprice").innerText = `${moneyAmount} is your total money.`;
         document.getElementById("change").innerText = `Your change is PHP ${changeAmount}.`;
     }
-
 }
