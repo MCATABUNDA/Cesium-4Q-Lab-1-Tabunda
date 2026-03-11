@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Miguel Tabunda</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Miguel Tabunda">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form name="order-form" action="checkout.html" onsubmit="return validateForm()">
+        <label for = "student">Name: </label>
+        <input type = "text" name = "student" id = "student" required>
+
+        <br><br>
+
+        <label for = "orangeNum">Oranges (PHP20/PC): </label>
+        <input type = "number" name = "orangeNum" id = "orangeNum">
+
+        <br><br>
+
+        <label for = "appleNum">Apples (PHP18/PC): </label>
+        <input type = "number" name = "appleNum" id = "appleNum">
+
+        <br><br>
+
+        <label for = "money">Total amount you have: </label>
+        <input type = "number" name="money" id="money" required>
+
+        <br>
+        
+        <button type = "submit">SUBMIT</button>
+        <button type = "reset">RESET</button>
+    </form>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
